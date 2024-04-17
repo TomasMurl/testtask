@@ -3,5 +3,5 @@
   hosts: all
 
   roles:
-    - app_deployer
+    # - app_deployer
     - user_manage
