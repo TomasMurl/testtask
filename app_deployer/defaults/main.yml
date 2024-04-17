@@ -1,0 +1,3 @@
+---
+# defaults file for app_deployer
+image_name: tommymurl/simpleserver:latest

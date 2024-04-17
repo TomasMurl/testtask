@@ -1,0 +1,8 @@
+---
+# tasks file for app_deployer
+  - name: Deploy container
+    docker_container: 
+      name: SimpleServer
+      image: "{{ image_name }}"
+      ports:
+        - "8080:8080"

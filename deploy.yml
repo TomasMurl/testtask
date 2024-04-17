@@ -1,0 +1,8 @@
+---
+- name: Deploy application and configure users
+  hosts: all
+  # become: no
+
+  roles:
+    # - app_deployer
+    - user_manage

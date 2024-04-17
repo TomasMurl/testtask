@@ -1,0 +1,11 @@
+---
+# defaults file for user_manage
+users:
+  - name: ansuser1
+    password: testpass
+    state: present
+    key: " {{lookup('file', '/home/tommy/.ssh/ansuser1.pub') }} "
+  - name: ansuser2
+    password: testpass
+    state: present
+    key: " {{ lookup('file', '/home/tommy/.ssh/ansuser2.pub') }}"
