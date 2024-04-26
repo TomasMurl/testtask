@@ -16,6 +16,10 @@ def check_dns_servers():
 def health_check():
     return 'OK', 200
 
+@app.route('/')
+def start():
+    return 'OK', 200
+
 if __name__ == '__main__':
     flask_thread = threading.Thread(target=check_dns_servers)
     flask_thread.start()
